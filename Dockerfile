@@ -15,7 +15,8 @@ RUN mvn clean package -DskipTests
 # ==========================================
 # STAGE 2: Run the application
 # ==========================================
-FROM openjdk:17-jdk-slim
+FROM amazoncorretto:17-al2023-headless
+
 
 # Set the working directory for execution
 WORKDIR /app

@@ -18,6 +18,7 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:17-jdk-jammy
 
 
+
 # Set the working directory for execution
 WORKDIR /app
 

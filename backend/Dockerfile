@@ -15,7 +15,8 @@ RUN mvn clean package -DskipTests
 # ==========================================
 # STAGE 2: Run the application
 # ==========================================
-FROM eclipse-temurin:17-jdk-jammy
+FROM amazoncorretto:17-al2023-headless
+
 
 
 

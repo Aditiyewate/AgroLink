@@ -15,7 +15,8 @@ RUN mvn clean package -DskipTests
 # ==========================================
 # STAGE 2: Run the application
 # ==========================================
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk-jammy
+
 
 # Set the working directory for execution
 WORKDIR /app

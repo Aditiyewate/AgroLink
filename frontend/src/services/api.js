@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://agrolink-13.onrender.com',
+  baseURL: 'https://agrolink-13.onrender.com/api',
   headers: {
     'Content-Type': 'application/json',
   },

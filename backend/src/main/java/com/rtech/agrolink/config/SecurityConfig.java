@@ -78,13 +78,13 @@ public class SecurityConfig {
 
     @Bean
     @Bean
+    @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         
-        // This line now allows both your live website and your local Vite app
         configuration.setAllowedOrigins(Arrays.asList(
             "http://localhost:5173", 
-            "https://onrender.com"
+            "https://agrolink-9-wa03.onrender.com"
         ));
         
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
@@ -95,4 +95,4 @@ public class SecurityConfig {
         source.registerCorsConfiguration("/**", configuration);
         return source;
     }
-
+}
